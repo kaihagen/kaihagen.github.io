@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration-line: none;
+}
+
+/* Optional: Add a hover effect */
+a:hover {
+    text-decoration: none; /* Optional: Underline on hover for clarity */
+    color: #000; /* Change color on hover if needed */
+}
+
+/* Body */
+body {
+    font-family: monospace;
+    background-color: #FFFFFF; /* Updated for clarity */
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 50px;
+}
+
+.info {
+    align-content: center;
+    justify-content: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 5%;
+    background-color: rgba(255, 255, 255, 0); /* White with 50% transparency */
+}
+
+.logo {
+    display: inline-flex;
+    font-family: MODERN TYPEWRITER regular;
+    font-weight: lighter;
+    font-size: 40px;
+    color: #000;
+    margin-left: none;
+    letter-spacing: -2px;
+    text-align: left;
+    padding-top: 10px;
+    line-height: 1em;
+}
+
+.logo:hover {
+    font-weight: bold;
+}
+
+.link {
+    display: inline-flex; /* Use inline-flex to keep items on one line */
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-align: right; /* Aligns text to the right */
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: 50px;
+}
+
+.link:hover {
+    font-weight: bold;
+}
+
+.hero_header {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.greater-slideshow-container {
+    width: 100%;
+	max-height: 500px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+#slideshowContainer iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Individual slide */
+.slide {
+    display: none; /* Hide slides by default */
+    text-align: center;
+	height: 100%;
+}
+
+/* Style for slideshow media */
+.slideshow-media {
+	height: 100%;
+    width: auto;
+    max-width: 100%;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    border: none;
+}
+
+/* Add transition for smooth slide effects */
+@keyframes slide-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slide {
+    animation: slide-fade 1s ease-in-out;
+}
+
+/* Slideshow navigation buttons */
+.slideshow-navigation {
+    bottom: 0px;
+}
+
+/* Adjusted button container to be below the slideshow */
+.button-container {
+    width: 100%;
+    text-align: center; /* Center the buttons */
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+/* Style for the navigation buttons */
+.nav-btn {
+    background-color: #FFF; /* Highlight color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+    font-family: monospace;
+    text-transform: lowercase;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100px;
+}
+
+.nav-btn:hover {
+    background-color: #4CFF00;
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #000;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: -5px;
+}
+
+h4 {
+    color: #000; /* Subtle color for the tag */
+    text-align: left; /* Centered tag */
+}
+
+.project-layout {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* Project Details */
+.project-details {
+    width: 80%;
+    color: #000; /* Text color for details */
+    border: none;
+    padding: none;
+    margin-left: 25px;
+}
+
+.project-details p {
+    width: 100%;
+    line-height: 1.5;
+}
+
+.paragraph {
+    display: flex;
+    width: 100%;          /* Set width to control the element's size */
+    align-items: center;
+    line-height: 1.5;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.paragraph2 {
+    display: flex;
+    width: 100%;          /* Set width to control the element's size */
+    align-items: center;
+    line-height: 1.5;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+/* Make images take up the full width of their container */
+.single-media,
+.single-media2 {
+    width: auto; 
+    height: auto;               /* Maintain the aspect ratio */
+    border: 20px;             /* 20px padding between images */
+	grid-gap: auto;
+	max-height: 350px;
+}
+
+/* Flexbox row for positioning images */
+.media-row,
+.media-row2 {
+    display: flex;              /* Use flexbox for layout */
+    justify-content: center; /* Distribute images with space between */
+    align-items: center;        /* Center images vertically */
+    margin: 0;                  /* Remove any extra margin */
+    padding: 0;                 /* Remove any extra padding */
+    width: auto;                /* Full width */
+	grid-gap: 20px;
+	max-width: page;
+}
+
+/* Ensure the media container has no extra padding or margins */
+#singleMediaContainer,
+#singleMediaContainer2 {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.audio-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-pause-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.volume-slider {
+    width: 100px;
+}
+
+.progress-bar {
+    width: 200px;
+}
+
+
+.home {    
+    display: inline;
+    width: 100%;
+    text-decoration-line: underline;
+    font-family: MODERN TYPEWRITER regular;
+    font-weight: lighter;
+    font-size: 12px;
+    color: #000;
+}
+
+.home:hover {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px; /* Spacing above footer */
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0); /* Transparent */
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    background-color: #4CFF00; 
+}
