@@ -35,7 +35,8 @@ header {
 	font-size: calc(1rem + 1vw);
 	color: #000;
 	margin-left: none;
-	letter-spacing: -3px;
+	margin-right: 80px;
+	letter-spacing: -1px;
 	text-align: left;
 	padding-top: 10px;
 	line-height: 1em;
@@ -46,14 +47,16 @@ header {
 .link {
     display: inline-flex; /* Use inline-flex to keep items on one line */
     white-space: nowrap; /* Prevents text from wrapping */
-    text-align: right; /* Aligns text to the right */
 	font-family: monospace;
 	font-weight: lighter;
-	margin-left: 50px;
+	margin-right: calc(10vw);
 	font-size: calc(rem + 1vw);
 }
 .link:hover{
 	font-weight: bold;
+}
+.line {
+	display: inline-block; /* Use inline-flex to keep items on one line */
 }
 .hero_header {
 	color: #FFFFFF;
@@ -216,79 +219,4 @@ footer {
 	text-align: left;
 	padding-right: 20px;
 	margin-bottom: -15px; /* Adjust as needed */
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-.logo {
-	display: flex;
-	width: 100%;
-	font-size: calc(1.2rem + 1vw);
-	text-align: center;
-	font-family: MODERN TYPEWRITER regular;
-	font-weight: lighter;
-	margin-top: 13px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-}
-.link {
-    text-align: right; /* Aligns text to the right */
-	font-family: monospace;
-	font-weight: lighter;
-	margin-left: calc(1vw);
-	margin-right: calc(4vw);
-	font-size: calc(13vh/4);
-}
-.link:hover{
-	font-weight: bold;
-}
-.thumbnail {
-	overflow: hidden;
-	width: 350px;
-	text-align: center;
-	float: center;
-	margin-top: 35px;
-	background-color: rgba(255, 255, 255, 0); /* White with 50% transparency */
-	padding-top: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.gallery .thumbnail h4 {
-	color: #000;
-	text-align: left;
-	padding-right: 20px;
-	object-fit: cover;
-	margin-bottom: -10px;
-}
-.gallery .thumbnail p {
-	color: #000;
-	text-align: left;
-}
-.text_column {
-	width: 100%;
-	text-align: justify;
-	padding: 0;
-}
-.intro .column p {
-	width: 80%;
-	margin-left: 0px;
-}
-.text_column {
-	padding-left: 20px;
-	font-weight: normal;
-}
-.thumbnail {
-	width: 100%;
-}
-.column {
-	width: 100%;
-	margin-top: 0px;
-}
-.hero_header {
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 22px;
-	text-align: center;
-}
 }
