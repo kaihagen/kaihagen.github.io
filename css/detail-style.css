@@ -68,6 +68,7 @@ header {
 }
 .line {
 	display: inline-block; /* Use inline-flex to keep items on one line */
+	margin-bottom: 20px;
 }
 .hero_header {
     color: #FFFFFF;

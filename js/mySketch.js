@@ -1,7 +1,7 @@
 var spawn = []; // Array to hold Cells
 
 function setup() {
-    createCanvas(windowWidth, windowHeight-120).parent('intro'); // Set canvas size and attach to the intro section
+    createCanvas(windowWidth, windowHeight).parent('intro'); // Set canvas size and attach to the intro section
     // Spawning cells
     for (var i = 0; i < 20; i++) {
         spawn[i] = new Cells();
