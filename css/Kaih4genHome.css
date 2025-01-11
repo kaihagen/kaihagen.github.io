@@ -226,3 +226,8 @@ footer {
 	padding-right: 20px;
 	margin-bottom: -15px; /* Adjust as needed */
 }
+@media (max-width: 720px) {
+.logo {
+	font-family: "MODERN TYPEWRITER" regular;
+}
+}
