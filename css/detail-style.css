@@ -304,6 +304,9 @@ footer {
     padding: none;
     margin-left: 25px;
 }
+.logo {
+	font-family: "MODERN TYPEWRITER" regular;
+}
 .greater-slideshow-container {
 	display: grid;
     width: 100%;
