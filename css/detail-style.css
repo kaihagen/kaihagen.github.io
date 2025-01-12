@@ -297,7 +297,8 @@ footer {
 }
 @media (max-width: 720px) {
 .project-details {
-	display: grid;
+	position: absolute;
+	top: 400px;
     width: 100%;
     color: #000; /* Text color for details */
     border: none;

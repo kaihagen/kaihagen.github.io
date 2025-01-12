@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 @font-face {
-	font-family: "MODERN TYPEWRITER";
-	src: url("/fonts/MODERN TYPEWRITER.woff") format("woff");
+	font-family: 'MODERN TYPEWRITER';
+	src: url("/fonts/modern-typewriter.ttf") format("ttf");
 }
 a {
     color: inherit; /* Inherit the color from the parent element */
