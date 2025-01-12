@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: "MODERN TYPEWRITER";
-	src: url("/fonts/MODERN TYPEWRITER.woff");
+	src: url("/fonts/MODERN TYPEWRITER.woff") format("woff");
 }
 a {
     color: inherit; /* Inherit the color from the parent element */
