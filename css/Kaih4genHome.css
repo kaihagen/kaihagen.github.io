@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+/* Importing 'MODERN TYPEWRITER' font */
+@font-face {
+    font-family: 'MODERN TYPEWRITER';
+    src: url("/fonts/modern-typewriter.ttf") format("truetype"), url("/fonts/monospace.medium.woff") format("woff"); /* Correct format type */
+}
+
+/* Importing 'monospace' font */
+@font-face {
+    font-family: 'monospace';
+    src: url("/fonts/modern-typewriter.ttf") format("truetype"),
+     url("/fonts/monospace.medium.woff") format("woff"); /* Correct format type */
+}
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Optional: Add a hover effect */
+a:hover {
+    text-decoration: none; /* Optional: Underline on hover for clarity */
+    color: #000; /* Change color on hover if needed */
+}
+/* Body */
+body {
+	font-family: monospace;
+	background-color: #FFF;
+	margin: 0;
+}
+/* Container */
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255, 255, 255, 0); /* White with 50% transparency */
+}
+/* Header */
+header {
+	width: 100%;
+	height: 5%;
+	background-color: rgba(255, 255, 255, 0); /* White with 50% transparency */
+}
+.logo {
+	display: inline-flex;
+	font-family: MODERN TYPEWRITER regular;
+	font-weight: lighter;
+	font-size: calc(1rem + 1vw);
+	color: #000;
+	margin-left: none;
+	margin-right: 80px;
+	letter-spacing: -1px;
+	text-align: left;
+	padding-top: 10px;
+	line-height: 1em;
+}
+.logo:hover {
+	font-weight: bold;
+}
+.logo img {
+	margin-left: -6px;
+	margin-bottom: -11px;
+	margin-right: 80px;
+	letter-spacing: -1px;
+    display: inline-flex;
+    max-width: calc(1rem + 9vw); /* Adjust size as needed */
+    height: auto;
+}
+.link {
+    display: inline-flex; /* Use inline-flex to keep items on one line */
+    white-space: nowrap; /* Prevents text from wrapping */
+	font-family: monospace;
+	font-weight: lighter;
+	margin-right: calc(10vw);
+	font-size: calc(rem + 1vw);
+}
+.link:hover{
+	font-weight: bold;
+}
+.line {
+	display: inline-block; /* Use inline-flex to keep items on one line */
+	margin-bottom: 20px;
+}
+.hero_header {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0;
+	letter-spacing: 4px;
+}
+/* About Section */
+.text_column {
+	width: 100%;
+	text-align: left;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-right: 20px;
+	color: #000;
+}
+.gallery {
+	clear: both;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0); /* White with 50% transparency */
+	padding-bottom: 35px;
+	padding-top: 0px;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+.thumbnail {
+	overflow: hidden;
+	width: 350px;
+	text-align: center;
+	float: center;
+	margin-top: 35px;
+	background-color: rgba(255, 255, 255, 0); /* White with 50% transparency */
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.thumbnail img {
+    width: 100%; /* Ensures the image takes the full width of the thumbnail */
+    height: 200px; /* Set a fixed height for uniformity */
+	max-height: 50%;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+	overflow: hidden;
+}
+.gallery .thumbnail h4 {
+	color: #000;
+	text-align: left;
+	padding-right: 20px;
+	object-fit: cover;
+	margin-bottom: -10px;
+}
+.gallery .thumbnail p {
+	color: #000;
+	text-align: left;
+}
+/* More info */
+.intro {
+    width: 100%; /* Full width */
+    height: calc(70vh); /* Set height as needed */
+    overflow: hidden; /* Prevents overflow */
+    position: relative; /* Allows absolute positioning for the video */
+}
+.intro video {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 80%; /* Set width to a percentage less than 100% */
+    height: auto; /* Maintain aspect ratio */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
+}
+.column {
+	width: 50%;
+	text-align: center;
+	padding-top: 10px;
+	float: left;
+}
+.intro .column h3 {
+	color: #FFFFFF;
+	text-align: center;
+}
+.intro .column p {
+	color: #FFFFFF;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 200px;
+	opacity: 0.8;
+}
+.cards:hover {
+	opacity: 1;
+}
+.intro .column p {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	line-height: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 80%;
+}
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #000;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #4CFF00;
+	color: #000;
+	cursor: pointer;
+}
+.copyright {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #FFFFFF;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
+footer {
+	background-color: rgba(255, 255, 255, 0); /* White with 50% transparency */
+	padding-top: 10px;
+	padding-bottom: 10PX;
+}
+.intro {
+	display: inline-block;
+	background-color: #000;
+}
+.profile {
+	width: 50%;
+}
+.gallery .thumbnail .tag {
+	font-weight: lighter;
+	color: #5D5E5D;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-align: left;
+	padding-right: 20px;
+	margin-bottom: -15px; /* Adjust as needed */
+}
+@media (max-width: 720px) {
+	.logo {
+	font-family: "MODERN TYPEWRITER" regular;
+}
+	.logo img {
+	margin-left: -4px;
+	margin-right: 80px;
+	letter-spacing: -1px;
+    display: inline-flex;
+    max-width: calc(1rem + 28vw); /* Adjust size as needed */
+    height: auto;
+}
+	body {
+	font-family: monospace;
+	background-color: #FFF;
+	margin: 0;
+}
+}

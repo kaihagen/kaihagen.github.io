@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration-line: none;
+}
+
+/* Optional: Add a hover effect */
+a:hover {
+    text-decoration: none; /* Optional: Underline on hover for clarity */
+    color: #000; /* Change color on hover if needed */
+}
+
+/* Body */
+body {
+    font-family: monospace;
+    background-color: #FFFFFF; /* Updated for clarity */
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 50px;
+}
+
+.info {
+    align-content: center;
+    justify-content: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 5%;
+    background-color: rgba(255, 255, 255, 0); /* White with 50% transparency */
+}
+
+.logo {
+	display: inline-flex;
+	font-family: MODERN TYPEWRITER regular;
+	font-weight: lighter;
+	font-size: calc(1rem + 1vw);
+	color: #000;
+	margin-left: none;
+	margin-right: 80px;
+	letter-spacing: -1px;
+	text-align: left;
+	padding-top: 10px;
+	line-height: 1em;
+}
+.logo:hover {
+	font-weight: bold;
+}
+.logo img {
+	margin-left: -5px;
+	margin-bottom: -11px;
+	margin-right: 80px;
+	letter-spacing: -1px;
+    display: inline-flex;
+    max-width: calc(1rem + 9vw); /* Adjust size as needed */
+    height: auto;
+}
+.link {
+    display: inline-flex; /* Use inline-flex to keep items on one line */
+    white-space: nowrap; /* Prevents text from wrapping */
+	font-family: monospace;
+	font-weight: lighter;
+	margin-right: calc(10vw);
+	font-size: calc(rem + 1vw);
+}
+.link:hover{
+	font-weight: bold;
+}
+.line {
+	display: inline-block; /* Use inline-flex to keep items on one line */
+	margin-bottom: 20px;
+}
+.hero_header {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.greater-slideshow-container {
+    width: 100%;
+	max-height: 470px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: white; /* Set a white background to allow borders */
+}
+
+/* Individual slide */
+.slide {
+    display: none; /* Hide slides by default */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style for slideshow media */
+.slideshow-media {
+    width: 100%; /* Make the media take up the full width of the container */
+    height: 100%; /* Set the height to 100% of the container */
+    object-fit: contain; /* Ensure the entire image is visible, with white borders if needed */
+    background-color: white; /* Add a white background to show as borders */
+    border: none;
+}
+
+/* Ensure iframe takes up the entire container */
+#slideshowContainer iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Add transition for smooth slide effects */
+@keyframes slide-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slide {
+    animation: slide-fade 1s ease-in-out;
+}
+
+/* Slideshow navigation buttons */
+.slideshow-navigation {
+    bottom: 0px;
+}
+
+/* Adjusted button container to be below the slideshow */
+.button-container {
+    width: 100%;
+    text-align: center; /* Center the buttons */
+    align-items: flex-end;
+}
+
+/* Style for the navigation buttons */
+.nav-btn {
+    background-color: #FFF; /* Highlight color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+    font-family: monospace;
+    text-transform: lowercase;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100px;
+}
+
+.nav-btn:hover {
+    background-color: #4CFF00;
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #000;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: -5px;
+}
+
+h4 {
+    color: #000; /* Subtle color for the tag */
+    text-align: left; /* Centered tag */
+}
+
+.project-layout {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* Project Details */
+.project-details {
+    width: 80%;
+    color: #000; /* Text color for details */
+    border: none;
+    padding: none;
+    margin-left: 25px;
+}
+
+.project-details p {
+    width: 100%;
+    line-height: 1.5;
+}
+
+.paragraph {
+    display: flex;
+    width: 100%;          /* Set width to control the element's size */
+    align-items: center;
+    line-height: 1.5;
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+
+.paragraph2 {
+    display: flex;
+    width: 100%;          /* Set width to control the element's size */
+    align-items: center;
+    line-height: 1.5;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+    /* Make images take up the full width of their container and wrap in mobile */
+    .single-media,
+    .single-media2 {
+        display: flex; /* Make images block elements so they can break lines */
+        width: auto; /* Allow images to take the full width of the container */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 350px;
+        border: 20px; /* Padding between images */
+        margin-bottom: 20px; /* Add margin to space out images */
+    }
+
+    /* Flexbox row for positioning images (allow wrapping) */
+    .media-row,
+    .media-row2 {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center images */
+        align-items: center; /* Center images vertically */
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Full width */
+        grid-gap: 20px;
+    }
+/* Ensure the media container has no extra padding or margins */
+#singleMediaContainer,
+#singleMediaContainer2 {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.audio-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-pause-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.volume-slider {
+    width: 100px;
+}
+
+.progress-bar {
+    width: 200px;
+}
+
+
+.home {    
+    display: inline;
+    width: 100%;
+    text-decoration-line: underline;
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 12px;
+    color: #000;
+}
+
+.home:hover {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px; /* Spacing above footer */
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0); /* Transparent */
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    background-color: #4CFF00; 
+}
+@media (max-width: 720px) {
+.project-details {
+	display: grid;
+    width: 100%;          /* Set width to control the element's size */
+    line-height: 1.5;
+	margin: 0;
+}
+.logo {
+	font-family: MODERN TYPEWRITER regular;
+}
+.logo img {
+	margin-left: -4px;
+	margin-right: 80px;
+	letter-spacing: -1px;
+    display: inline-flex;
+    max-width: calc(1rem + 28vw); /* Adjust size as needed */
+    height: auto;
+}
+.greater-slideshow-container {
+	display: grid;
+    width: 100%;
+	max-height: 500px;
+}
+.project-layout {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+#projectTitle, #projectTag {
+    margin-top: 5px;  /* Minimal top margin */
+    margin-bottom: 5px; /* Minimal bottom margin */
+}
+.paragraph {
+    display: grid;
+    width: 100%;          /* Set width to control the element's size */
+    align-items: center;
+    line-height: 1.5;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.paragraph2 {
+    display: grid;
+    width: 100%;          /* Set width to control the element's size */
+    align-items: center;
+    line-height: 1.5;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+    /* Make images take up the full width of their container and wrap in mobile */
+    .single-media,
+    .single-media2 {
+        display: block; /* Make images block elements so they can break lines */
+        width: 45%; /* Allow images to take the full width of the container */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 350px;
+        max-width: 45%; /* Ensure images don't exceed the container width */
+        border: 20px; /* Padding between images */
+        margin-bottom: 20px; /* Add margin to space out images */
+    }
+
+    /* Flexbox row for positioning images (allow wrapping) */
+    .media-row,
+    .media-row2 {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center images */
+        align-items: center; /* Center images vertically */
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Full width */
+        grid-gap: 20px;
+    }
+
+/* Ensure the media container has no extra padding or margins */
+#singleMediaContainer,
+#singleMediaContainer2 {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.audio-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-pause-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.volume-slider {
+    width: 100px;
+}
+
+.progress-bar {
+    width: 200px;
+}
+
+}
