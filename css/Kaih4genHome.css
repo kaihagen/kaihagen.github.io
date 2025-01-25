@@ -146,7 +146,7 @@ header {
     position: relative; /* Allows absolute positioning for the video */
 }
 .intro img {
-    position: absolute; /* Absolute positioning */
+    position: relative; /* Absolute positioning */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     width: 80%; /* Set width to a percentage less than 100% */
