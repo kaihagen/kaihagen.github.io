@@ -145,7 +145,7 @@ header {
     overflow: hidden; /* Prevents overflow */
     position: relative; /* Allows absolute positioning for the video */
 }
-.intro video {
+.intro img {
     position: absolute; /* Absolute positioning */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
