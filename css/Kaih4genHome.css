@@ -71,7 +71,7 @@ header {
     white-space: nowrap; /* Prevents text from wrapping */
 	font-family: monospace;
 	font-weight: lighter;
-	margin-right: calc(10vw);
+	margin-right: calc(9vw);
 	font-size: calc(rem + 1vw);
 }
 .link:hover{
